@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create a Plant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="plant-body">
+<h1>Create Endemic Plant</h1>
+<div class="frame">
+<form id="plant-form">
+    <div class="mb-3">
+    <label class="form-label" id="id"></label>
+    </div>
+
+    <div class="mb-3">
+    <label class="form-label" for="local-name">Local Name:</label>
+    <input class="form-control" type="text" id="local-name" name="species" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="scientific-name">Scientific Name:</label>
+        <input class="form-control" type="text" id="scientific-name" name="name" required>
+    </div>
+    <div class="mb-3">
+    <label class="form-label" for="description">Description:</label>
+    <textarea class="form-control" id="description" name="description" required></textarea>
+    </div>
+    <div class="mb-3">
+    <label class="form-label" for="care-tips">Care Tips:</label>
+    <textarea class="form-control" id="care-tips" name="careTips" required></textarea>
+    </div>
+    <input  class="btn btn-success" type="submit" value="Submit">
+    <input  class="btn btn-danger" type="button" value="Delete">
+    <input  class="btn btn-primary" type="button" value="Update">
+</form>
+</div>
+
+<!--<div>-->
+<!--    <form>-->
+<!--        <h2>Add a Tip for you favorite plants</h2>-->
+<!--        <label for="plant-name"></label>-->
+<!--        <input type="text" id="plant-name" placeholder="Plant Name">-->
+<!--        <label id="descriptionOfPlant" for="description-tips" ></label>-->
+<!--        <input type="text" id="description-tips" placeholder="Your Description">-->
+<!--        <input name="careTips" type="text" id="careTipsForForm" placeholder="Write your Care Tips">-->
+<!--        <button id="submitBtnForTips">Submit</button>-->
+<!--    </form>-->
+
+<!--</div>-->
+<div class="container" id="seeAllPlants">
+    <h1>Plants in Texas</h1>
+    <div class="table-responsive mx-3">
+    <table id="plantsTable" class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Description</th>
+            <th>Care Tips</th>
+            <th>Image</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+</div>
+<div id="seeAllTips"></div>
+<script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="./javascript/plantDetails.js"></script>
+</body>
+</html>
